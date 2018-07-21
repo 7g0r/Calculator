@@ -35,9 +35,10 @@ class StringCalculatorTest {
         //then
         assertEquals(3, result);
     }
+
     @DisplayName("Pętla")
     @Test
-    public void shouldAddTheUknownAmountOfnumbers(){
+    public void shouldAddTheUknownAmountOfnumbers() {
         // given 
         StringCalculator stringCalculator = new StringCalculator();
         //when 
@@ -45,14 +46,26 @@ class StringCalculatorTest {
         //then 
         assertEquals(15, result);
     }
+
     @DisplayName("Zadanie z nową linią")
     @Test
-    public void shouldAddTheStingWithNewLine(){
+    public void shouldAddTheStingWithNewLine() {
         // given 
         StringCalculator stringCalculator = new StringCalculator();
         //when 
         int result = stringCalculator.add("1\n2,3");
         //then 
-        assertEquals(6,result);
+        assertEquals(6, result);
+    }
+
+    @DisplayName("Test z własnym znakiem rozdzielnym")
+    @Test
+    public void shouldReturnSomething () {
+        // given
+    StringCalculator stringCalculator = new StringCalculator()
+        //when
+    int result = stringCalculator.add("//;\n3;2;4"));
+        //then
+    assertEquals(9, result);
     }
 }
