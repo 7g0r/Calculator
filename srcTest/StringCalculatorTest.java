@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -34,6 +35,7 @@ class StringCalculatorTest {
         //then
         assertEquals(3, result);
     }
+    @DisplayName("Pętla")
     @Test
     public void shouldAddTheUknownAmountOfnumbers(){
         // given 
@@ -42,5 +44,15 @@ class StringCalculatorTest {
         int result = stringCalculator.add("1,2,3,4,5");
         //then 
         assertEquals(15, result);
+    }
+    @DisplayName("Zadanie z nową linią")
+    @Test
+    public void shouldAddTheStingWithNewLine(){
+        // given 
+        StringCalculator stringCalculator = new StringCalculator();
+        //when 
+        int result = stringCalculator.add("1\n2,3");
+        //then 
+        assertEquals(6,result);
     }
 }
