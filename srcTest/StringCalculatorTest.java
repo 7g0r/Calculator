@@ -34,5 +34,13 @@ class StringCalculatorTest {
         //then
         assertEquals(3, result);
     }
-
+    @Test
+    public void shouldAddTheUknownAmountOfnumbers(){
+        // given 
+        StringCalculator stringCalculator = new StringCalculator();
+        //when 
+        int result = stringCalculator.add("1,2,3,4,5")
+        //then 
+        assertEquals(15, result);
+    }
 }
