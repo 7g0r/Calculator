@@ -13,6 +13,7 @@ public class StringCalculator {
            int parsedNumber;
 
     //    int element = Integer.parseInt( arrayOfNumbers[0] );
+
    //     int element2 = Integer.parseInt( arrayOfNumbers[1] );
 
         for (String number : arrayOfNumbers) {
