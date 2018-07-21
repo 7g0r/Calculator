@@ -39,7 +39,7 @@ class StringCalculatorTest {
         // given 
         StringCalculator stringCalculator = new StringCalculator();
         //when 
-        int result = stringCalculator.add("1,2,3,4,5")
+        int result = stringCalculator.add("1,2,3,4,5");
         //then 
         assertEquals(15, result);
     }
