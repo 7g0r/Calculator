@@ -27,8 +27,9 @@ class StringCalculatorTest {
     @Test
     public void shouldReturnSumOfTwoStrings() {
         // given
-        StringCalculator stringCalculator = new StringCalculator()
+        StringCalculator stringCalculator = new StringCalculator();
         //when
+
         int result = stringCalculator.add("1,2");
         //then
         assertEquals(3, result);
